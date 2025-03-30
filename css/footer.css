@@ -1,7 +1,13 @@
 .footer {
   background-color: #000096;
-  color: #323334;
+  color: #ffffff;
   padding: 24px 0;
+  width: 100%;
+}
+
+.main__footer {
+  width: 100%;
+  position: relative;
 }
 
 @media only screen and (min-width: 680px) {
