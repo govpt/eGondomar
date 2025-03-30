@@ -1,10 +1,12 @@
-/* Footer Styles */
+
+/* Footer base styles */
 .footer {
   background-color: #000096;
   color: #ffffff;
   padding: 24px 0;
   width: 100%;
   position: relative;
+  margin-top: auto;
 }
 
 .main__footer {
@@ -13,54 +15,69 @@
   background-color: #000096;
 }
 
-.footer__navigation {
-  margin-bottom: 34px;
+/* Grid layout */
+.footer .grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
-.footer__links {
-  margin-top: 18px;
+.footer .grid__col {
+  padding: 0 15px;
+  flex: 1;
+}
+
+/* Navigation */
+.footer .navigation {
+  margin-bottom: 30px;
+}
+
+.footer .navigation__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.footer__link {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  padding-right: 32px;
-  white-space: nowrap;
-  display: block;
+.footer .navigation__item {
   margin-bottom: 10px;
 }
 
-.footer__link:after {
-  -webkit-mask-image: url(../fonts/link.svg);
-  mask-image: url(../fonts/link.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: #fff;
-  position: absolute;
-  margin-left: 8px;
-  top: -3px;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  content: "";
+.footer .navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.2s;
 }
 
-.footer__link:hover {
-  text-decoration: underline;
+.footer .navigation__link:hover {
+  opacity: 0.8;
 }
 
+/* Links section */
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Social icons */
 .footer__social {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .footer__social .social__item {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
-  display: inline-block;
   margin-right: 20px;
+  display: inline-block;
 }
 
 .social__icon {
@@ -69,19 +86,19 @@
   fill: currentColor;
 }
 
+/* Responsive adjustments */
 @media only screen and (min-width: 680px) {
   .footer {
     padding: 40px 0;
   }
-
+  
   .footer__links {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 28px;
   }
-
-  .footer__social .social__item {
-    margin-top: 0;
+  
+  .footer__link {
+    margin-right: 30px;
   }
 }
 
@@ -89,25 +106,8 @@
   .footer {
     padding: 56px 0;
   }
-
-  .footer__links {
+  
+  .footer__navigation {
     margin-bottom: 34px;
-  }
-  .footer__logo {
-    float: none;
-  }
-}
-
-.footer__logo {
-  color: #fff;
-  height: 30px;
-  width: 99px;
-  margin-top: 27px;
-}
-
-@media only screen and (min-width: 680px) {
-  .footer__logo {
-    margin-top: 0;
-    float: right;
   }
 }
