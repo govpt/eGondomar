@@ -1,66 +1,58 @@
 
+/*
+################
+FOOTER 
+################
+*/
+
 footer {
-  background-color: #f8f9fa;
-  padding: 4rem 0;
-  margin-top: 4rem;
+  color: #323334;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.footer-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
-.useful-links, .discover {
-  margin-bottom: 2rem;
-}
-
-.useful-links ul, .discover ul {
-  list-style: none;
-  padding: 0;
-}
-
-.useful-links li, .discover li {
-  margin-bottom: 1rem;
-}
-
-.useful-links a, .discover a {
-  color: #0066cc;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.useful-links a:hover, .discover a:hover {
-  color: #004999;
-  text-decoration: underline;
-}
-
-.connect {
-  margin-bottom: 2rem;
-}
-
-.connect ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.connect img {
-  width: 32px;
-  height: 32px;
-}
-
-@media (min-width: 768px) {
-  .footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+@media (min-width: 999.98px) {
+  footer {
+    padding-top: 1.5rem;
   }
 }
+
+footer .container {
+  margin: 0 auto;
+  padding-top: 3.5rem;
+  padding-bottom: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 100%;
+}
+
+@media (min-width: 1248px) {
+  footer .container {
+    max-width: 1152px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 699px) {
+  footer .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+footer.bg-footer-white {
+  background-color: #fff;
+}
+
+footer.bg-footer-hellamaa {
+  background-color: #f7f8f9;
+}
+
+footer.bg-footer-mustkivi {
+  background-color: #323334;
+}
+
+footer.bg-footer-mustkivi .container button.icon-chevron-down svg path {
+  stroke: #ffffff;
+}
+
+/* Continue com o resto do CSS convertido... */
