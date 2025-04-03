@@ -1,5 +1,5 @@
 
 <?php
-// Mover o favicon.ico da pasta images para a raiz do projeto
-copy('images/favicon.ico', 'favicon.ico');
+// Copy eg.jpg to favicon.ico
+copy('images/eg.jpg', 'favicon.ico');
 ?>
